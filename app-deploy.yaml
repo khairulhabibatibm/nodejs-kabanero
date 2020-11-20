@@ -5,8 +5,8 @@ metadata:
     architecture: x86_64
     build-date: 2020-09-03T09:04:29.841722
     commit.image.appsody.dev/contextDir: C:\repository\IBM\appsody\nodeapp
-    commit.image.appsody.dev/date: Fri Nov 20 08:19:12 2020 +0700
-    commit.image.appsody.dev/message: '''init'''
+    commit.image.appsody.dev/date: Fri Nov 20 08:30:52 2020 +0700
+    commit.image.appsody.dev/message: change welcome
     commit.stack.appsody.dev/contextDir: /incubator/nodejs-express
     commit.stack.appsody.dev/date: Fri Oct 9 09:28:22 2020 -0400
     commit.stack.appsody.dev/message: 'Merge pull request #347 from garypicher/updateUBIVersionForOpenJDKImage'
@@ -14,10 +14,11 @@ metadata:
       Express collection
     distribution-scope: public
     help: For more information visit https://github.com/sclorg/s2i-nodejs-container
-    image.opencontainers.org/created: "2020-11-20T08:25:37+07:00"
+    image.opencontainers.org/created: "2020-11-20T08:57:28+07:00"
     image.opencontainers.org/documentation: https://github.com/khairulhabibatibm/nodejs-kabanero
-    image.opencontainers.org/revision: 0056535293e8aa0cae72a57ba510116c62d6d129
-    image.opencontainers.org/source: https://github.com/khairulhabibatibm/nodejs-kabanero/tree/master
+    image.opencontainers.org/revision: b5093df4bfb792980342341b6701814cf600b49f
+    image.opencontainers.org/source: |
+      https://github.com/khairulhabibatibm/nodejs-kabanero/tree/master
     image.opencontainers.org/url: https://github.com/khairulhabibatibm/nodejs-kabanero
     k8s.io/description: Node.js 12 available as container is a base platform for building
       and running various Node.js 12 applications and frameworks. Node.js is a platform
@@ -64,8 +65,9 @@ metadata:
     stack.appsody.dev/id: nodejs-express
     stack.appsody.dev/version: 0.4.10
   name: nodeapp
+  namespace: apptest
 spec:
-  applicationImage: dev.local/nodeapp
+  applicationImage: nodeapp:1.1
   createKnativeService: false
   expose: true
   livenessProbe:
