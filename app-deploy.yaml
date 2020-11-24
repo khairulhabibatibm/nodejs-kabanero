@@ -65,7 +65,7 @@ metadata:
     stack.appsody.dev/id: nodejs-express
     stack.appsody.dev/version: 0.4.10
   name: nodeapp
-  namespace: apptest
+  namespace: demo
 spec:
   applicationImage: nodeapp:1.1
   createKnativeService: false
